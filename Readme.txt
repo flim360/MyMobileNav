@@ -1,1 +1,1 @@
-This is my first GitHub Repsoitory for test purposes only.
+This is my first GitHub Repository for test purposes only.
