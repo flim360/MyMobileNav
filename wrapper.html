@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Luminate Mobile Nav</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<!-- START: Additional HEAD Elements 
+*********************************************************
+Additional HTML Tags for HEAD Element for the wrapper:
+  Meta, CSS, JS, jQuery, Google Analytics, etc... 
+*********************************************************** -->
+
+<!-- <link type="image/ico" href="../custom/camp14_wrpr_new/images/favicon.ico" rel="shortcut icon"> -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8; IE=EDGE" />
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+
+
+<!--[if IE]>
+  <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+
+
+
+<link href="camp2014.css" rel="stylesheet" type="text/css">
+<link href="camp2014_responsive.css" rel="stylesheet" type="text/css">
+
+
+
+
+<!-- Fix event popup on Calendar pages - Conditional CSS -->
+[[?x2x::x[[S4=App ID]]x::
+<style type="text/css">
+#contentContainer, #maincontent { position:static; }
+
+/* Fix IE display issue and Calendar form style */
+div#event_preference_information.responsive { width: auto; margin-bottom: 15px; }
+
+#event_preference_information table { width:100%; }
+
+/* Override default styles */
+div.responsive input, div.responsive textarea {background-color:#FFFFFF;}
+
+.Explicit { font-size:14px; }
+
+div.survey-question-container legend { font-size:14px; margin-bottom:10px; }
+
+input#rsvp_reset, input#rsvp_cancel { display:none; } 
+
+#UserRSVPContainer input[type=text] { width:100%; }
+
+#UserRSVPContainer input#rsvp_num_guests { width:35px; }
+
+label { font-size:14px; }
+
+#EventPreferenceTitle, #lo-EventPreference  { display:none; } 
+
+#maincontent input.Button { 
+background: #F7974D;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+#lo-EventPrefContainer { display:none; }
+
+#attendingTextDiv { display:none; }
+
+div.lo-EventReminderContainer2 { display:none; }
+</style>
+::]]
+
+
+
+
+<!-- Google Analytics can be entered here or at the end of the BODY content (before closing BODY tag). -->  
+
+
+<!-- END: Additional HEAD Elements -->
+
+</head>
+
+
+<!-- Conditional BODY tag class 
+.pagebuilder - for content side padding in information pages
+.camphomepage - conditional homepage 100% content width
+
+class="mobile [[?xcamp_14_homexcamp_14_home_newx::x[[S334:pagename]]x::camphomepage::[[?x19x::x[[S4=PageBuilder App]]x::pagebuilder::]]]] [[S4=AppId]]"
+-->
+<body class="mobile">	
+
+<header>
+<!-- reus_camp_14_new_wrapper_header -->
+[[S51: reus_camp_14_new_wrapper_header]]
+
+  <div id="header-social">
+    <div class="rowcontainer">
+      <a href="http://www.sickkidsfoundation.com" target="_blank"><img class="header-sklogo" src="../custom/camp14_wrpr_new/images/logo_sick_kids.png"></a>
+      <div id="header-sociallink">
+        <a href="https://www.facebook.com/CampForKeeps" target="_blank"><img class="socialicon" src="../custom/camp14_wrpr_new/images/icon_facebook.png" width="30">
+        <a href="https://twitter.com/CampForKeeps" target="_blank"><img class="socialicon" src="../custom/camp14_wrpr_new/images/icon_twitter.png" width="30"></a>
+        <a href="https://www.youtube.com/user/SickKidsFoundation" target="_blank"><img class="socialicon" src="../custom/camp14_wrpr_new/images/icon_youtube.png" width="30"></a>
+      </div>
+    </div>
+  </div><!-- //siteheader -->
+
+  <div id="header-topnav">
+    <div class="rowcontainer">
+      <div class="topnav leftside">
+        <a href="PageServer?pagename=reus_camp_14_registration_category">Register</a>
+        <a href="PageServer?pagename=RFI14_landingpage" target="_blank">Request Info</a>
+      </div>
+      <div class="topnav rightside">
+        <a href="UserLogin?s_AffiliateSecCatId=1081&NEXTURL=[[T1:TRC/Events/CAMP_14?fr_id=1050&pg=center]]">Sign In</a>
+        <a href="TR/Events/CAMP_14?pg=pfind&fr_id=1050&pw_id=1581">Donate</a>
+      </div>
+      <div class="headcamplogo">
+        <a href="http://www.support.sickkidsfoundation.com/site/PageServer?pagename=camp_14_home"><img src="../custom/camp14_wrpr_new/images/logo_thegreatcamp.png" alt="CANACORD GENUITY - THE GREAT CAMP ADVENTURE WALK - SickKids"></a>
+      </div>
+
+
+    </div>
+  </div><!-- //header-topnav -->
+
+  <div id="header-mainnav">
+    <div class="rowcontainer">
+
+      <a class="showMenu gradient medblue" href="#">Menu</a>
+
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-item mobonly" id="mob-close"><a href="#">Close <i class="fa fa-times-circle fa-lg"></i></a></li>
+          
+          <!--NAV ITEM MOBILE ONLY-->
+          <li id="mob-register" class="nav-item mobonly"><a href="PageServer?pagename=reus_camp_14_registration_category">Register</a></li>
+          <li id="mob-request" class="nav-item mobonly"><a href="PageServer?pagename=RFI14_landingpage" target="_blank">Request Info</a></li>
+          <li id="mob-signin" class="nav-item mobonly"><a href="UserLogin?s_AffiliateSecCatId=1081&NEXTURL=[[T1:TRC/Events/CAMP_14?fr_id=1050&pg=center]]">Sign In</a></li>
+          <li id="mob-donate" class="nav-item mobonly"><a href="TR/Events/CAMP_14?pg=pfind&fr_id=1050&pw_id=1581">Donate</a></li>
+          
+          <!--NAV ITEM 1-->
+          <li id="nav-home" class="nav-item"><a href="http://www.support.sickkidsfoundation.com/site/PageServer?pagename=camp_14_home">Home</a></li>
+
+          <!--NAV ITEM 2-->
+          <li id="nav-about" class="nav-item"><span class="nav-click"><i class="fa fa-chevron-right"></i></span><a href="#" class="hassubnav">About</a>
+            <ul class="nav-submenu">
+              <li><a href="PageServer?pagename=reus_camp_14_about_the_walk">The Walk</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_calendar_of_events_page">Calendar of Events</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_FAQ_event_day">Event Day</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_ways_to_help_your_impact">Your impact</a></li>
+              <li><a href="PageServer?pagename=camp_14_charter">Camp Charter</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_team_challenge">Team Challenges</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_media_centre_media_gallery">Media Gallery</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_media_centre_contact">Media Contact</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_media_centre_our_partners">Our Partners</a></li>
+              <li><a href="PageServer?pagename=RFI14_landingpage" target="_blank">Request more information</a></li>
+            </ul>
+          </li>
+
+          <!--NAV ITEM 3-->
+          <li id="nav-camp" class="nav-item"><span class="nav-click"><i class="fa fa-chevron-right"></i></span><a href="#" class="hassubnav">Camp Training Hub</a>
+            <ul class="nav-submenu">
+              <li><a href="PageServer?pagename=reus_camp_14_training_and_tips">Training and Tips FAQ</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_FAQ_Donations">Donations FAQ's</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_faq_cabins">Cabin FAQ</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_FAQ_Camp_Headquarters_and_Personal_Page">Camp & Headquarters & Personal page FAQ's</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_FAQ_event_day">Event Schedule</a></li>
+              <li><a href="TRC/Events/CAMP_14?fr_id=1050&pg=center">Participant Centre</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_contact_us">Contact Us</a></li>
+            </ul>
+          </li>
+
+          <!--NAV ITEM 4-->
+          <li id="nav-register" class="nav-item"><span class="nav-click"><i class="fa fa-chevron-right"></i></span><a href="#" class="hassubnav">Register</a>
+            <ul class="nav-submenu">
+              <li><a href="TRR/Events/CAMP_14?fr_id=1050&pg=tfind">Restart A Team </a></li>
+              <li><a href="TRR/Events/CAMP_14?fr_tm_opt=new&pg=tfind&fr_id=1050&pw_id=1581">Create A Team</a></li>
+              <li><a href="TRR/Events/CAMP_14?fr_id=1050&pg=tfind">Join A Team</a></li>
+              <li><a href="TRR/Events/CAMP_14?fr_tm_opt=none&pg=tfind&fr_id=1050&pw_id=1581">Individual</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_ways_to_help_camp_peeps">Crew</a></li>
+            </ul>
+          </li>
+
+          <!--NAV ITEM 5-->
+          <li id="nav-support" class="nav-item"><span class="nav-click"><i class="fa fa-chevron-right"></i></span><a href="#" class="hassubnav">Support Us</a>
+            <ul class="nav-submenu">
+              <li><a href="PageServer?pagename=reus_camp_14_volunteer_registration">Volunteer</a></li>
+              <li><a href="TR/Events/CAMP_14?pg=pfind&fr_id=1050&pw_id=1581">Sponsor/Donate</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_top_fundraisers">Top 25 Individuals</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_top_teams">Top 10 Teams</a></li>
+              <li><a href="PageServer?pagename=reus_camp_14_top_companies">Top 5 Companies</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </div><!-- //header-topnav -->
+
+<!-- //reus_camp_14_new_wrapper_header -->  
+</header>
+
+
+
+
+<div id="site-content" class="clearfix">
+  <div class="rowcontainer">
+    <div class="page-content">
+
+    <!-- START: Page Content placeholder -->
+    [[S63:3]]
+    <!-- END: Page Content placeholder -->
+
+    </div>
+  </div>
+</div><!-- //site-content -->
+
+
+<!-- reus_camp_14_new_wrapper_footer -->
+[[S51: reus_camp_14_new_wrapper_footer]]
+
+<footer>
+  <div class="rowcontainer">
+    <div id="sitefooter-link" class="clearfix">
+      <!-- Wrapper Footer -->
+      <!-- Include Blackbaud logo in the bottom of the wrapper -->
+      <div class="footer-col sickkids">
+        <a href="#"><img src="../custom/camp14_wrpr_new/images/logo_sick_kids.png" class="footer-sklogo"></a>
+      </div>
+
+      <div class="footer-col home">
+        <a href="http://www.support.sickkidsfoundation.com/site/PageServer?pagename=camp_14_home">Home</a>
+        <a href="PageServer?pagename=reus_camp_14_about_the_walk">About</a>
+        <a href="PageServer?pagename=reus_camp_14_training_and_tips">Camp Training Hub</a>
+        <a href="PageServer?pagename=reus_camp_14_registration_category">Register</a>
+        <a href="TR/Events/CAMP_14?pg=pfind&fr_id=1050">Support Us</a>
+      </div>
+      
+      <div class="footer-col contact">
+        <a href="PageServer?pagename=reus_camp_14_contact_us">Contact Us</a>
+        <a href="http://www.sickkidsfoundation.com/" target="_blank">Sick Kids</a>
+        <a href="PageServer?pagename=reus_camp_14_privacy_policy">Privacy Policy</a>
+        <a href="PageServer?pagename=reus_camp_14_terms_and_conditions">Terms and Conditions</a>
+      </div>
+
+      <div class="footer-col connect">
+        <a href="PageServer?pagename=RFI14_landingpage" target="_blank">What to know more?</a>
+        We'd love to connect with you.
+        <div id="footer-sociallink">
+          <a href="https://www.facebook.com/CampForKeeps" target="_blank"><img src="../custom/camp14_wrpr_new/images/icon_facebook.png" width="30"></a>
+          <a href="https://twitter.com/CampForKeeps" target="_blank"><img src="../custom/camp14_wrpr_new/images/icon_twitter.png" width="30"></a>
+          <a href="https://www.youtube.com/user/SickKidsFoundation" target="_blank"><img src="../custom/camp14_wrpr_new/images/icon_youtube.png" width="30"></a>
+        </div>
+      </div>
+    </div><!-- //sitefooter -->
+
+      <div id="sitefooter-copy">
+        &copy;  [[S9:pattern:yyyy]] SickKids Foundation. All rights reserved. | Call 416-4-4KEEPS (416-445-3377) to learn more!
+      </div>
+
+
+  </div>
+<footer>
+
+
+<!-- Responsive Nav Control -->
+<!--  Hide and use YUI -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+/* Use Convio YUI */
+
+// Y.use('jquery-noconflict', function() {
+// jQuery(function($){
+
+// DOM ready
+$(function() {
+  
+  // Add a <span> to every .nav-item that has a <ul> inside
+ // $('.nav-item').has('ul').prepend('<span class="nav-click"><i class="fa fa-caret-right fa-2x"></i></span>');
+  
+  // Click to reveal the nav
+  $('.showMenu, #mob-close').click(function(){
+    $('nav').toggleClass('shownav'); 
+    $('.nav-item, .nav-submenu').removeClass('active');
+    $('i.fa').removeClass('fa-rotate-90');
+    return false;
+  });
+  
+  adjustMenu();
+
+});
+
+// Window resize adjust menu for mobile/desktop menu
+
+var ww = document.body.clientWidth;
+
+$(window).bind('resize orientationchange', function() {
+  ww = document.body.clientWidth;
+  adjustMenu();
+});
+
+var adjustMenu = function() {
+  if (ww < 768) {
+    $('.hassubnav').unbind('click').bind('click', function(e) {
+      // Toggle the nested nav
+      $(this).siblings('.nav-submenu').toggleClass('active');
+     
+      // Toggle the arrow using CSS3 transforms
+      $(this).siblings('.nav-click').find('.fa').toggleClass('fa-rotate-90');
+      $(this).parent().toggleClass('active');
+      return false;
+    });
+  } 
+  else if (ww >= 768) {
+    $('.hassubnav').unbind('click').removeClass('active');
+    $('.nav-item, .nav-submenu').removeClass('active');
+    $('i.fa').removeClass('fa-rotate-90');
+  }
+}
+
+//   });
+// });
+</script>
+
+
+</body>
+</html>

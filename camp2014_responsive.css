@@ -1,0 +1,449 @@
+/************************** Responsive Media Query ****************************/
+
+/************ Tablet Layout: 768px - 991px. *************/
+@media only screen and (max-width: 991px) {
+
+
+
+
+/****** Top Nav ******/
+
+#header-topnav {
+  height: 140px;
+}
+.headcamplogo {
+  /*width: 190px;*/
+}
+.topnav {
+  margin-top: 100px;
+}    
+.topnav a:link, .topnav a:visited {
+  margin: 0 5%;
+}
+
+
+/***** Main Nav 900px - 991  *****/
+li.nav-item {
+  margin: 0 1.5%;
+}
+#nav-home {
+    margin-left: 0;
+    width: 11%;
+}
+#nav-about {
+    width: 14%;
+}
+#nav-camp {
+    width: 27.5%;
+}
+#nav-register {
+    width: 16.5%;
+}
+#nav-support {
+    margin-right: 0;
+    width: 19%;
+}
+.nav-click {
+    padding-right: 10px;
+}
+/* End Main Nav */
+
+
+
+
+
+
+
+
+
+/***** Content Section *****/
+
+#site-content .rowcontainer {
+  padding: 30px 5px;
+}
+
+/***** Footer *****/
+
+#footer .rowcontainer {
+  padding: 0 5px;
+}
+
+
+}
+
+/* Bridge styles for Main Nav - 768 - 900px */
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+/***** Main Nav *****/
+nav {
+    display: block;
+    margin: 0 auto;
+    padding-top: 90px;
+    position: relative;
+    width: 730px;
+}
+
+li.nav-item {
+  padding-left: 0 !important;
+  float: left;
+  margin: 0 2%;
+  position: relative;
+}
+
+li.nav-item > a {
+  padding-left: 10px;
+  background: none !important;
+}
+
+/*#nav-home {
+    margin-left: 0;
+    width: 70px;
+}
+#nav-about {
+    width: 88px;
+}
+#nav-camp {
+    width: 207px;
+}
+#nav-register {
+    width: 112px;
+}
+#nav-support {
+    margin-right: 0;
+    width: 135px;
+}*/
+
+#nav-home {
+    margin-left: 0;
+    width: 70px;
+}
+#nav-about {
+    width: 88px;
+}
+#nav-camp {
+    width: 207px;
+}
+#nav-register {
+    width: 112px;
+}
+#nav-support {
+    margin-right: 0;
+    width: 135px;
+}
+
+/*li.nav-item {
+  margin: 0 1%;
+}
+#nav-home {
+  background: url(../custom/camp14_wrpr_new/images/icon_nav_tent.png) 0 0 no-repeat;
+  margin-left: 0; 
+  width: 13%;
+}
+#nav-about {
+  background: url(../custom/camp14_wrpr_new/images/icon_nav_binoculars.png) 0 0 no-repeat;
+  width: 13%;
+}
+#nav-camp {
+  background: url(../custom/camp14_wrpr_new/images/icon_nav_compass.png) 0 0 no-repeat;
+  width: 26%;
+}
+#nav-register {
+  background: url(../custom/camp14_wrpr_new/images/icon_nav_fire.png) 0 0 no-repeat;
+  width: 16%;
+}
+#nav-support {
+  background: url(../custom/camp14_wrpr_new/images/icon_nav_cross.png) 0 0 no-repeat;
+  margin-right: 0;
+  width: 17%;
+  text-align: right;
+}*/
+
+.nav-click {
+    padding-right: 5px;
+}
+
+
+}
+
+
+/************ Mobile Landscape: 480px - 767px. *************/
+@media only screen and (max-width: 767px) {
+
+/* General Styling */
+
+h1, h2 {
+    font-size: 30px;
+}
+
+
+/* Header */
+.headcamplogo {
+    top: 5px;
+    width: 180px;
+}
+
+
+/* Top Nav */
+.topnav {
+  display: none;
+} 
+
+/* Main Nav */
+#header-mainnav {
+  height: 65px;
+}
+a.showMenu {
+  display: block;
+}
+.nav-item:hover .nav-submenu {
+    display: none;
+}
+
+
+/* Mobile Main Nav */
+
+nav {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  width: 300px;
+  background: #FFFFFF;
+  float: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin-top: 0;
+  height: 100%;
+  z-index: 99;
+  left: -320px;
+  transition: left 0.5s;
+  -webkit-transition: left 0.5s;
+
+  overflow: hidden;
+  -webkit-box-shadow: 2px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  -moz-box-shadow:    2px 0px 5px 0px rgba(0, 0, 0, 0.35);
+  box-shadow:         2px 0px 5px 0px rgba(0, 0, 0, 0.35);
+}
+/*nav {
+  left: -300px;
+
+}*/
+nav.shownav {
+  left: 0;
+}
+nav .mobonly {
+  display: block;
+}
+.nav-list {
+  height: 100%;
+  left: 0;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
+  position: relative;
+  width: 350px; /* Wider width to hide scroll bar */
+  background: #14629F;
+
+}
+li.nav-item {
+  float: none;
+  margin: 0;
+  width: 300px !important;
+
+}
+li.nav-item > a {
+  background-color: #14629F;
+  background-position: 10px 15px;
+}
+li.nav-item > a, li.nav-item > a:visited {
+    display: block;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 15px 0 50px;
+    text-decoration: none;
+    width: 100% !important;
+    text-align: left;
+    border-bottom: 1px dashed #CCCCCC;
+
+}
+li.nav-item > a:hover {
+  background-color: #06B3E1;
+}
+li.nav-item:hover {
+  /*background-color: #06B3E1 !important;*/
+}  
+
+li.nav-item.active > a {
+  background-color: #06B3E1;
+}
+
+
+#mob-close a {
+  color: #14629F;
+  background: #FFFFFF !important;
+  text-align: right;
+}
+#mob-close a:hover {
+  color: #06B3E1;
+}
+
+li.nav-item.mobonly a {
+  background: #F15D5E;
+  padding-left: 15px !important;
+}
+li.nav-item.mobonly a:hover {
+  background: #06B3E1;
+}
+
+.nav-click {
+  color: #FFFFFF;
+  display: block;
+  float: right;
+  padding: 20px 10px 0 0;
+}
+.nav-click i {
+  transform: none;
+}
+.nav-click i.fa-rotate-90 {
+    transform: rotate(90deg);
+}
+
+
+/* Sub Menu */
+
+.nav-submenu {
+    position: relative;
+}
+
+.nav-submenu.active li {
+  background-color: #06B3E1;
+}    
+.nav-submenu li {
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+}
+
+.nav-submenu li:hover { 
+    background: none;
+}
+
+.nav-submenu li:last-child {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; /* future proofing */
+  -khtml-border-radius: 0; /* for old Konqueror browsers */
+}
+.nav-submenu a {
+  margin: 0 25px 0 50px;
+  width: 225px !important;
+  border-bottom: none;
+}
+.nav-submenu li:hover {
+  color: #F15D5E;
+  background: #FFFFFF;
+}
+.nav-submenu li:hover a {
+  color: #F15D5E;
+}
+.nav-submenu.active {
+  display: block !important;
+}
+
+/* End Main Nav */
+
+
+
+/***** Content ******/
+.pagebanner img {
+  margin-left: -10%;
+  width: 120%;
+}
+
+
+/***** Footer ******/
+.footer-col {
+  width: 30%;
+  margin-right: 5%;
+
+
+}
+.footer-col.sickkids {
+    border-bottom: 1px solid #FFFFFF;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+
+
+/************************** 
+     Luminate Override: < 768px
+***************************/
+
+/* Personal Page */
+.trPage .sideBar {
+    margin-left: 10px;
+    text-align: center;
+    width: 200px;
+}
+.trPage .imageFrame {
+    width: 100%;
+    display: none;
+}
+
+
+/* Donation Form */
+.mobile div.responsive div.form-row {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.mobile div.responsive div.form-content {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+
+
+}
+
+
+/************ Mobile Potrait: 320px. *************/
+@media only screen and (max-width: 479px) {
+
+
+
+.headcamplogo {
+    top: 0;
+    width: 145px;
+}
+
+
+
+/***** Footer ******/
+.footer-col {
+  width: 100%
+}
+
+
+
+/************************** 
+     Luminate Override: < 480px
+***************************/
+
+/* Personal Page */
+.trPage .sideBar {
+    margin: 20px 0;
+    text-align: center;
+    width: 100%;
+    float: none;
+}
+.trPage .main {
+    float: none;
+    margin: 0;
+    overflow: visible;
+    width: 100%;
+}
+
+
+
+}
+

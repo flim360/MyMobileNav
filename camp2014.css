@@ -1,0 +1,661 @@
+@import url(https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css); 
+
+.Intro-Black-Inline { 
+  font-family: Intro-Black-Inline;
+  font-weight: normal;
+  font-style: normal;
+}
+.Intro-Bold { 
+  font-family: Intro-Bold;
+  font-weight: normal;
+  font-style: normal;
+}
+.IntroRegular { 
+  font-family: IntroRegular;
+  font-weight: normal;
+  font-style: normal;
+} 
+
+.black { color: #333333; }
+.navy { color: #14629F; }
+.sky { color: #06B3E1; }
+.fire { color: #F15D5E; }
+.grass { color:  #48A848; }
+
+*, html, body, form, input, input.AddressBookButtons, input.Advocacy, input.btn, input.btnLg, input.btnMed, input.btnMini, input.btnSm, select, select.Advocacy, textarea, legend, ul, ol, li, option, table, tr, th, th.rfl_infoStatus, td, td.AlertListDescription, td.cstmBack, p, p.cstmBtnText, p.cstmFrame, p.cstmHeading, p.cstmText, p.cstmTitle, p.dividerHeading, p.scrollingText, span.cstmHeading, a, a.btn, a.btn:visited, a.cstmBtnText:hover, a.cstmBtnText:link, a.cstmBtnText:visited, #navList, .AdvocacyInstructions, .AdvocacyNSFix, .BlogHeader, .Button, .Divider, .FieldLabels, .FormBox, .FormBox06, .FormBoxHeader, .Hint, .Instructions, .Instructions, .ListItem0, .ListItem1, .NetscapeFix, .NoteText, .ObjTitle, .PhotoLinks, .Premiums, .ProgressBox, .ProgressBoxCurrent, .SectionHead, .SmallButton, .Smaller, .SmallerC, .TribBtnText1, .Upgrades, .WhatNext, .alphacube_content, .dialog_content, .dialog_title, .Explicit, .fr_register_another, .paraBlueSansSmall, .smallBlack, .smallSans, .smallSansBold, .smallWhiteBoldSans, .smallWhiteSans, .smallestBlackSans {
+    font-family: IntroRegular,Arial,Helvetica,sans-serif;
+}
+body, P { 
+  font-family: IntroRegular; 
+  color: #333333;
+}
+p { 
+  margin-top: 3px;
+} 
+h1, h2, div.campaign-banner-container {
+  font-family: Intro-Bold;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 38px;
+  color: #14629F;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+h3, h4, h5 { 
+  font-family: Intro-Bold;
+  font-weight: normal; 
+  font-style: normal; 
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #14629F;
+}
+
+h4, h5 {
+  color: #333333;
+}
+
+a:link, a:visited {
+    color: #06B3E1;
+    text-decoration: none;
+}
+a:hover {
+    color: #14629F;
+    text-decoration: underline;
+}
+
+
+/************************** 
+          Layout 
+***************************/
+header {
+
+}
+.rowcontainer {
+  max-width: 992px;
+  margin: 0 auto;
+}
+#header-social {
+  background: #06B3E1;
+  padding: 10px;
+}
+#header-topnav {
+  background: url(../custom/camp14_wrpr_new/images/bg_sky.jpg) center top repeat-x #FFFFFF;
+  height: 180px;
+  text-align: center;
+}
+#header-mainnav {
+  background: #F15D5E;
+  height: 140px;
+}
+#site-content {
+  background: #FFFFFF;
+   min-height: 300px; 
+   height:auto !important; 
+   height: 300px; 
+}
+
+footer {
+  background-color: #14629F;
+  color: #FFFFFF;
+  width: 100%;
+}
+
+/************************** 
+        Header & Nav
+***************************/ 
+.header-sklogo {
+  width: 100px;
+}
+#header-sociallink {
+  float: right;
+}
+.socialicon {
+  margin-left: 5px;
+}
+
+
+
+/* Header Top Nav */
+.headcamplogo {
+  margin: 0 auto;
+  position: relative;
+  top: 15px;
+  width: 25.20%; /*250px/992px*/
+}
+.headcamplogo img {
+  width: 100%;
+}
+.topnav {
+  margin-top: 130px;
+  width: 37.40%; /*371px/992*/     
+}
+.topnav.leftside {
+  float:left;
+}
+.topnav.rightside {
+  float:right;
+}
+.topnav a:link, .topnav a:visited {
+  font-size: 16px;
+  /*font-family: Intro-Black-Inline;*/
+  font-family: Intro-Bold;
+  text-transform: uppercase;
+  margin: 0 9%;
+  width: 37.40%; /*371px/992*/  
+}
+.topnav a:hover {
+  text-decoration: none;
+
+}  
+
+/*********** Main Nav ************/
+a.showMenu {
+  display: none;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+    background: #14629F;
+    color: #FFFFFF;
+    float: right;
+    font-family: Intro-Bold;
+    font-size: 15px;
+    height: 45px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-left: 40px;
+    padding-top: 15px;
+    position: relative;
+    text-decoration: none;
+    width: 90px;
+}
+.showMenu:before {
+    content: "\f0c9";
+    color: #FFFFFF;
+    font-family: FontAwesome;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: normal;
+    left: 10px;
+    position: absolute;
+    text-decoration: none;
+    top: 10px;
+}
+a.showMenu:hover {
+  background: #06B3E1;
+  color: #FFFFFF;
+}
+
+
+.mobclose {
+  display: none;
+}
+.mobonly {
+  display: none;
+}
+
+
+
+
+nav {
+  display: inline-block;
+  position:relative;
+  margin-top: 90px;
+  width: 100%;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list {
+  width: 100%;
+  list-style: none outside none;
+}
+li.nav-item {
+  float:left;
+  *display:inline;
+  zoom:1;
+  position:relative;
+  float: left;
+  margin: 0 2%;
+/*  background-position: 5px 10px;
+  background-repeat: no-repeat;*/
+}
+
+li.nav-item > a, li.nav-item > a:visited {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+
+  color: #FFFFFF;
+  font-family: Intro-Bold;
+  font-size: 15px;
+  text-decoration: none;
+  display: block;
+  padding: 15px 0  0 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  height: 50px;
+
+}
+
+li.nav-item:hover {
+  /*background-color: #06B3E1 !important;*/
+  background-color: #14629F !important;
+}
+
+li.nav-item > a {
+  background-position: 5px 10px;
+  background-repeat: no-repeat;
+} 
+#nav-home {
+  margin-left: 0; 
+  width: 10%;
+}
+#nav-home a {
+  background-image: url(../custom/camp14_wrpr_new/images/icon_nav_tent.png);
+}  
+
+#nav-about {
+  /*background-image: url(../custom/camp14_wrpr_new/images/icon_nav_binoculars.png);*/
+    width: 14%;
+}
+#nav-about a {
+  background-image: url(../custom/camp14_wrpr_new/images/icon_nav_binoculars.png);
+}
+
+#nav-camp {
+  width: 26%;
+}
+#nav-camp a {
+  background-image: url(../custom/camp14_wrpr_new/images/icon_nav_compass.png);
+}  
+
+#nav-register {
+  width: 16%;
+}
+#nav-register a {
+  background-image: url(../custom/camp14_wrpr_new/images/icon_nav_fire.png);
+}
+
+#nav-support {
+  margin-right: 0;
+  width: 18%;
+}
+#nav-support a {
+  background-image: url(../custom/camp14_wrpr_new/images/icon_nav_cross.png);
+}
+
+.nav-click {
+    color: #FFFFFF;
+    display: block;
+    float: right;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+.nav-click i {
+    font-size: 14px;
+    transform: rotate(90deg);
+}
+
+
+/**** SUBMENU  ****/
+
+.nav-submenu {
+    list-style: none outside none;
+    position: absolute;
+    text-align: left;
+    z-index: 29;
+    display: none;
+}
+
+#nav-support .nav-submenu {
+  left: auto;
+  right: 0;
+}
+
+.nav-item:hover .nav-submenu {
+  display: block;
+}
+
+.nav-submenu li { 
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  /*background-color: #06B3E1;*/
+  background-color: #14629F;
+  -webkit-box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.3); 
+}
+
+.nav-submenu a {
+    width: 220px;
+    color: #FFFFFF;
+    font-size: 15px !important;
+    font-weight: normal;
+    margin: 0 25px;
+    padding: 15px 0 !important;
+    text-align: left;
+    text-decoration: none;
+    display: block;
+    background-image: none !important;
+    font-family: IntroRegular;
+  }
+  
+.nav-submenu a:hover {
+  /*color: #124488;*/
+}
+.nav-submenu li:hover { 
+    /*background: #F15D5E;*/
+    background-color: #06B3E1;
+}
+
+/*.nav-submenu li:last-child {
+  border-radius: 0 0 8px 8px; 
+  -moz-border-radius: 0 0 8px 8px;
+  -webkit-border-radius: 0 0 8px 8px;
+  -khtml-border-radius: 0 0 8px 8px; 
+}*/
+
+.nav-submenu li:last-child a {
+  border-bottom: 0;
+}
+
+/* End NAV */
+
+
+
+/************************** 
+          Content
+***************************/
+
+
+#site-content .rowcontainer {
+  padding: 30px 0;
+}
+
+
+.pagebuilder .page-content {
+  max-width: 910px;
+  margin: 0 auto;
+}
+
+.pagebanner {
+  max-width: 910px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.pagebanner img {
+  width: 100%;
+  display: block;
+}
+
+
+
+/******** Homepage  *********/
+
+/*
+.homepage #site-content .rowcontainer {
+  padding: 0;
+  width: 100%;
+}
+
+.homepage .page-content {
+  width: 100%;
+  margin: 0;
+}
+
+.camphomepage #site-content > .rowcontainer {
+  max-width: 100%;
+  margin: 0;
+}
+#home-promo {
+  background: url(../custom/camp14_wrpr_new/images/bg_skyline.png) center bottom repeat-x #14629F;
+  height: 550px;
+  color: #FFFFFF;
+}
+#home-toplist {
+  background: url(../custom/camp14_wrpr_new/images/bg_grass.png) center bottom repeat-x #FFFFFF;
+  height: 400px;
+  color: #14629F;
+
+}
+#home-partner {
+  background: #48A848;
+  height: 280px;
+  color: #FFFFFF;
+}
+*/
+
+
+
+
+
+/************************** 
+          Footer
+***************************/
+#sitefooter-link {
+  width: 100%;
+  padding: 50px 0 0 0;
+  font-family: Intro-Bold;
+  font-size: 13px;
+}
+
+.footer-col {
+  width: 23.5%;
+  margin-right: 2%;
+  float: left;
+  display: inline-block;
+  font-family: Intro-Bold;
+  vertical-align: top;
+  margin-bottom: 20px;
+}
+
+
+
+.footer-col a:link, .footer-col a:visited {
+  color: #FFFFFF;
+  display: block;
+  font-family: Intro-Bold;
+  margin-bottom: 7px;
+}
+.footer-col a:hover {
+  text-decoration: none;
+  color: #06B3E1;
+}
+
+#sitefooter-link > div:last-child {
+  margin-right: 0;
+}
+
+#footer-sociallink {
+  margin-top: 20px;
+
+}
+#footer-sociallink a {
+  display: inline-block;
+  margin-right: 10px;
+}
+#sitefooter-copy {
+  width: 100%;
+  clear: both;
+  padding-bottom: 20px;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+
+
+
+
+/************************** 
+     Luminate Override 
+***************************/
+
+div.responsive a.next-step,
+div.responsive button.next-step, div.responsive button.action-button {
+    border: 1px solid #14629F;
+    background-color: #14629F;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#14629F', endColorstr='#06B3E1');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#14629F', endColorstr='#06B3E1')";
+    background-image: -ms-linear-gradient(top, #14629F, #06B3E1);
+    background-image: -webkit-linear-gradient(top, #14629F, #06B3E1);
+    background-image: -moz-linear-gradient(top, #14629F, #06B3E1);
+    background-image: -o-linear-gradient(top, #14629F, #06B3E1);
+    background-image: linear-gradient(top, #14629F, #06B3E1);
+    color: #fff;
+    font-size: 14px;
+}
+div.responsive a.next-step:hover,
+div.responsive button.next-step:hover, div.responsive button.action-button:hover {
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06B3E1', endColorstr='#14629F');
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#06B3E1', endColorstr='#14629F')";
+    background-image: -ms-linear-gradient(top, #06B3E1, #14629F);
+    background-image: -webkit-linear-gradient(top, #06B3E1, #14629F);
+    background-image: -moz-linear-gradient(top, #06B3E1, #14629F);
+    background-image: -o-linear-gradient(top, #06B3E1, #14629F);
+    background-image: linear-gradient(top, #06B3E1, #14629F);
+}
+
+
+
+
+/* Personal Page */
+.trPage { margin:0; width:100%; }
+.trPage .sideBar {
+    text-align: center;
+    width: 320px;
+    margin-left: 20px;
+}
+.trPage .main {
+    float: none;
+    margin: 0;
+    width: auto;
+}
+.trPage .imageFrame {
+    width: 320px;
+}
+
+#frStatus1, #frStatus2, #frStatus3 { width:190px; margin:0 auto; }
+#frStatus1 .thermometer, #frStatus2 .thermometer, #frStatus2 .vScroll, #frStatus3 .donorWall { background-color:#399; border-color:#ccc; color:#fff; margin: 10px auto; }
+#frStatus1 .goal, #frStatus2 .goal, #frStatus2 .scrollContent, #frStatus3 .list { background-color:#85c2c2; text-align:center; }
+#frStatus1 .goal, #frStatus2 .goal { font-size:14px; padding:5px; }
+#frStatus1 .goal p, #frStatus2 .goal p { font-weight:bold; margin-bottom:0; }
+#frBadge { font-size:12px; margin:0 auto 20px auto; width:190px; }
+
+.sideBar .menu {
+    border: none;
+    margin: 0 auto 20px;
+    padding: 15px 10px 0;
+    width: auto;
+}
+.sideBar .menu p {
+    background: #F15D5E;
+    padding: 0;
+}
+.sideBar .menu a:link, .sideBar .menu a:visited {
+    color: #FFFFFF;
+    display: block;
+    font-family: Intro-Bold;
+    font-size: 16px;
+    padding: 10px;
+}
+.sideBar .menu a:hover {
+    text-decoration: none;
+    background: #14629F;
+}
+.TrAchievementBadgeTextLarge { line-height:30px; }
+.TrAchievementBadgeIconListLargeHeader { font-size:14px; }
+
+#frStatus2 .vScroll .title { background:url(../custom/camp13_wrpr/images/oak-leaf.png) top left no-repeat; margin:-5px 0 0 -10px; height:56px; padding:15px 20px 0 20px; } 
+
+.thermometerWide { width:170px; }
+.thermometerWide .text { width:140px; }
+.thermometerWide .image { margin-left:10px; }
+
+.thermometerWide .goal dl, .thermometerWide .goal dd, .thermometerWide .goal dt { display:inline; margin:0; line-height:1.4; }
+
+
+/* Company sidebar list */
+.vScrollList ol {
+  text-align: left;
+}
+
+/** Customize donation form layout **/
+
+div.responsive div.form-content {
+  margin-bottom: 10px;
+  margin-right: 0;
+  margin-top: 0; 
+}  
+div.form-row {
+  margin-bottom: 0;
+  margin-top: 0; 
+}
+.html-caption-container h1,
+.responsive .section-header-container {
+  font-size: 28px;
+}
+.don-standard-levels { 
+  margin-top:20px !important; 
+}
+.doantion-levels {
+  background:#F3F3F3; float:left; padding: 10px 10px 0;
+  border: 2px solid #CFCFCF;
+  border-radius: 6px 6px 6px 6px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+div.donation-level-container {
+  border: none;
+  float: left;
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-right:10px;
+  width: 150px; }
+
+div.donation-level-container .form-content { 
+  margin-bottom: 8px;
+  margin-right: 0;
+  margin-top: 0px;}
+    
+div.donation-level-input-container, 
+div.generic-repeat-label-checkbox-container { 
+  padding: 0; 
+}
+.donation-level-amount-container { 
+    font-family: Intro-Bold;
+}
+
+div.responsive input, div.responsive textarea { background:#F9F9F9; }
+
+div.responsive #tr_message_to_participantname, 
+#donor_addr_street1_row input, 
+#donor_addr_street2_row input, 
+#billing_addr_street1_row input, 
+#billing_addr_street2_row input { width:95%; }
+
+#donor_first_name_row, 
+#donor_last_name_row, 
+#billing_first_name_row, 
+#billing_last_name_row { width:200px; float:left; }
+
+#donor_addr_street1_row { clear:both; }
+
+#payment_typecc_exp_date_row { width:150px; float:left; }
+
+#payment_typecc_cvv_row { width:200px; float:left; }
+
+#payment_typecc_cvvname { width:60px; }
+
+#donor_email_opt_in_Row { clear:both; }
+
+#donor_email_opt_in_Row label { max-width:600px; }
+
+
+
+
